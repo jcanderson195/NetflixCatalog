@@ -68,10 +68,6 @@ namespace NetflixCatalog
             return newGenre;
         }
 
-
-
-
-
     }
 }
     

@@ -28,10 +28,10 @@ namespace NetflixCatalog
             action.Titles.Add(new Title("Spider Man",3,121));
             action.Titles.Add(new Title("300",4,117));
 
-            
+            Console.WriteLine("Titles Under Action genre");
             foreach (Title name in action.Titles)
             {
-
+                
                 Console.WriteLine(string.Format("[Movie: {0}, Time: {1} minutes]", name.titleName, name.time)); 
                 
             }
@@ -42,7 +42,7 @@ namespace NetflixCatalog
             comedy.Titles.Add(new Title("Rush Hour 3",3 ,91));
             comedy.Titles.Add(new Title("Frozen", 5,102));
 
-            Console.WriteLine("Title   Rating    Duration (minutes)");
+            Console.WriteLine("Titles Under Comedy genre");
             foreach (Title name in comedy.Titles)
             {
 
@@ -55,7 +55,7 @@ namespace NetflixCatalog
             romance.Titles.Add(new Title("The Note Book",5 ,102));
             romance.Titles.Add(new Title("Definitely Maybe", 4, 112));
 
-            Console.WriteLine("Title   Rating    Duration (minutes)");
+            Console.WriteLine("Titles Under Romance genre");
             foreach (Title name in romance.Titles)
             {
 
@@ -73,7 +73,7 @@ namespace NetflixCatalog
             all.Titles.Add(new Title("Definitely Maybe",4 ,112));
             all.Titles.Add(new Title("300", 4,117));
 
-            
+            Console.WriteLine("All available movie titles");
             foreach (Title name in all.Titles)
             {
 
@@ -90,11 +90,11 @@ namespace NetflixCatalog
             all.Titles.Add(new Title("Scooby Doo", 4, 30));
             all.Titles.Add(new Title("Family Guy", 5, 30));
 
-            
+            Console.WriteLine("All available show titles");
             foreach (Title name in all.Titles)
             {
 
-                Console.WriteLine(string.Format("[Show: {0}, Time: {1} minutes]", name.titleName, name.time));
+                Console.WriteLine(string.Format("[Show: {0}, Total episodes: {1}]", name.titleName, 5));
             }
         }
 
@@ -102,11 +102,11 @@ namespace NetflixCatalog
         {
             action.Titles.Add(new Title("Naruto", 5, 30));
 
-            
+            Console.WriteLine("Titles Under Action genre");
             foreach (Title name in action.Titles)
             {
 
-                Console.WriteLine(string.Format("[Show: {0}, Time: {1} minutes]", name.titleName, name.time));
+                Console.WriteLine(string.Format("[Show: {0}, Total episodes: {1}]", name.titleName, 5));
             }
         }
 
@@ -115,11 +115,11 @@ namespace NetflixCatalog
             comedy.Titles.Add(new Title("Scooby Doo", 4, 30));
             comedy.Titles.Add(new Title("Family Guy", 5, 30));
 
-            
+            Console.WriteLine("Titles Under Comedy genre");
             foreach (Title name in comedy.Titles)
             {
 
-                Console.WriteLine(string.Format("[Show: {0}, Time: {1} minutes]", name.titleName, name.time));
+                Console.WriteLine(string.Format("[Show: {0}, Total episodes: {1}]", name.titleName, 5));
             }
         }
 
@@ -179,6 +179,7 @@ namespace NetflixCatalog
 
         public void ChooseYourGenreMovie()
         {
+            Console.WriteLine("-----------------------");
             Console.WriteLine("What movie genre would you like to view?");
             Console.WriteLine("1.All");
             Console.WriteLine("2.Action");
@@ -217,6 +218,7 @@ namespace NetflixCatalog
 
         public void MultiGenreSearchAction()
         {
+            Console.WriteLine("---------------------------");
             Console.WriteLine("Would you like to narrow your search with another genre?");
             Console.WriteLine("1.Yes");
             Console.WriteLine("2.No");
@@ -245,7 +247,7 @@ namespace NetflixCatalog
                     foreach (Title name in ActionComedy.Titles)
                     {
 
-                        Console.WriteLine(string.Format("[Show: {0}, Time: {1} minutes]", name.titleName, name.time));
+                        Console.WriteLine(string.Format("[Movie: {0}, Time: {1} minutes]", name.titleName, name.time));
                     }
 
                 }
@@ -265,6 +267,7 @@ namespace NetflixCatalog
 
         public void MultiGenreSearchComedy()
         {
+            Console.WriteLine("----------------------");
             Console.WriteLine("Would you like to narrow your search with another genre?");
             Console.WriteLine("1.Yes");
             Console.WriteLine("2.No");
@@ -294,7 +297,7 @@ namespace NetflixCatalog
                     foreach (Title name in RomanticComedy.Titles)
                     {
 
-                        Console.WriteLine(string.Format("[Show: {0}, Time: {1} minutes]", name.titleName, name.time));
+                        Console.WriteLine(string.Format("[Movie: {0}, Time: {1} minutes]", name.titleName, name.time));
                     }
 
                 }
@@ -325,6 +328,7 @@ namespace NetflixCatalog
         public void MultiGenreSearchRomance()
 
         {
+            Console.WriteLine("--------------------------------");
             Console.WriteLine("Would you like to narrow your search with another genre?");
             Console.WriteLine("1.Yes");
             Console.WriteLine("2.No");
@@ -354,7 +358,7 @@ namespace NetflixCatalog
                     foreach (Title name in RomanticComedy.Titles)
                     {
 
-                        Console.WriteLine(string.Format("[Show: {0}, Time: {1} minutes]", name.titleName, name.time));
+                        Console.WriteLine(string.Format("[Movie: {0}, Time: {1} minutes]", name.titleName, name.time));
                     }
 
                 }

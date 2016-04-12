@@ -14,7 +14,7 @@ namespace NetflixCatalog
         List<Episode> ScoobyDooEpisodes = new List<Episode>();
         List<Episode> NarutoEpisodes = new List<Episode>();
 
-        public Show(string Name, int Rating)
+        public Show(string Name, int Rating, int Episodes)
         {
             
             titleName = Name;

@@ -17,7 +17,6 @@ namespace NetflixCatalog
         {
             Console.WriteLine("Welcome to Netflix");
             Console.WriteLine("---------------");
-            Console.WriteLine();
             Console.WriteLine("Are you watching a TV Show or a Movie today?");
             Console.WriteLine("1. Movie");
             Console.WriteLine("2. TV Show");
